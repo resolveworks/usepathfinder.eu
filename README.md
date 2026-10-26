@@ -20,4 +20,5 @@ pnpm check        # svelte-check
 pnpm preview      # serve the built site locally
 ```
 
-Screenshots in `static/screenshots/` are emulator captures of the app.
+Screenshots in `static/screenshots/` are emulator captures of the app; retake them
+with `scripts/screenshots.sh`.

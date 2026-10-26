@@ -63,7 +63,7 @@
 			<figure>
 				<img
 					src="/screenshots/01.png"
-					alt="The settings screen: default model and thinking level, providers, web search keys, reasoning display, and system prompt."
+					alt="The chat transcript: the agent's answer to “Who is it for?” — who Pathfinder fits, and who it's not for."
 					width="1080"
 					height="2424"
 				/>
@@ -71,7 +71,7 @@
 			<figure>
 				<img
 					src="/screenshots/02.png"
-					alt="The providers screen: an alphabetical list of providers from Ant Ling to GitHub Copilot, DeepSeek marked configured."
+					alt="The session tree: the conversation's turns and branches, with search and a user-only filter."
 					width="1080"
 					height="2424"
 				/>
@@ -79,15 +79,15 @@
 			<figure>
 				<img
 					src="/screenshots/03.png"
-					alt="The completed answer: what Pathfinder is, its key features, privacy and license."
+					alt="The settings screen: default model and thinking level, providers, web search keys, reasoning display, and system prompt."
 					width="1080"
 					height="2424"
 				/>
 			</figure>
 		</section>
 		<p class="caption">
-			Right: asked “What’s this: github.com/resolveworks/pathfinder”. It fetches the page, notices it is
-			running inside the very harness it is describing, and answers concisely.
+			Left and middle: one session — the agent answering follow-ups about
+			github.com/resolveworks/pathfinder, and the same session's conversation tree.
 		</p>
 
 		<section id="features">
