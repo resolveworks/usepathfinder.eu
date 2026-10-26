@@ -63,7 +63,7 @@
 			<figure>
 				<img
 					src="/screenshots/01.png"
-					alt="The agent fetches the GitHub repository it was asked about and shows its reasoning."
+					alt="The settings screen: default model and thinking level, providers, web search keys, reasoning display, and system prompt."
 					width="1080"
 					height="2424"
 				/>
@@ -71,7 +71,7 @@
 			<figure>
 				<img
 					src="/screenshots/02.png"
-					alt="Collapsed tool output in the transcript, with the answer taking shape."
+					alt="The providers screen: an alphabetical list of providers from Ant Ling to GitHub Copilot, DeepSeek marked configured."
 					width="1080"
 					height="2424"
 				/>
@@ -86,7 +86,7 @@
 			</figure>
 		</section>
 		<p class="caption">
-			Asked “What’s this: github.com/resolveworks/pathfinder”. It fetches the page, notices it is
+			Right: asked “What’s this: github.com/resolveworks/pathfinder”. It fetches the page, notices it is
 			running inside the very harness it is describing, and answers concisely.
 		</p>
 
