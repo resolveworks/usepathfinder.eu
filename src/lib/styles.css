@@ -9,6 +9,7 @@
 	--button-bg: #005a9e;
 	--button-fg: #ffffff;
 	--code-bg: #f0f0f0;
+	--shadow: 0 1px 2px rgb(0 0 0 / 0.05), 0 16px 32px -24px rgb(0 0 0 / 0.35);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -23,6 +24,7 @@
 		--button-bg: #e6e6e6;
 		--button-fg: #101014;
 		--code-bg: #1a1a20;
+		--shadow: 0 1px 2px rgb(0 0 0 / 0.5), 0 16px 32px -24px rgb(0 0 0 / 0.8);
 	}
 }
 
@@ -184,23 +186,47 @@ p {
 }
 
 .screenshots {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 1rem;
-	justify-content: center;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1.25rem;
 	padding-block: 2.5rem 0.75rem;
 }
 
 .screenshots figure {
 	margin: 0;
+	min-width: 0;
 }
 
 .screenshots img {
 	display: block;
-	width: min(240px, 100%);
+	width: 100%;
 	height: auto;
-	border-radius: 1.5rem;
+	border-radius: 1.25rem;
 	border: 1px solid var(--border);
+	box-shadow: var(--shadow);
+}
+
+/* Full-bleed swipeable strip on small screens. */
+@media (max-width: 639px) {
+	.screenshots {
+		display: flex;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		scroll-padding-inline: 1.25rem;
+		margin-inline: -1.25rem;
+		padding-inline: 1.25rem;
+		padding-block-end: 1.5rem;
+		scrollbar-width: none;
+	}
+
+	.screenshots::-webkit-scrollbar {
+		display: none;
+	}
+
+	.screenshots figure {
+		flex: 0 0 min(62vw, 280px);
+		scroll-snap-align: start;
+	}
 }
 
 .caption {
