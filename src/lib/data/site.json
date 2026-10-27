@@ -3,5 +3,9 @@
 	"url": "https://usepathfinder.eu",
 	"description": "A native Android research agent: a chat app that lets a language model search the web and read pages to answer, talking directly to the model providers you configure. There is no Pathfinder server in between.",
 	"github": "https://github.com/resolveworks/pathfinder",
-	"releases": "https://github.com/resolveworks/pathfinder/releases"
+	"releases": "https://github.com/resolveworks/pathfinder/releases",
+	"developer": {
+		"name": "Resolve.",
+		"url": "https://resolve.works/"
+	}
 }

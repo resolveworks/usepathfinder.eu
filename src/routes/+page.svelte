@@ -11,6 +11,7 @@
 		operatingSystem: 'Android 14+',
 		url: `${site.url}/`,
 		downloadUrl: `${site.releases}/latest`,
+		author: { '@type': 'Organization', name: site.developer.name, url: site.developer.url },
 		license: 'https://www.gnu.org/licenses/gpl-3.0.html',
 		offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }
 	};
@@ -56,7 +57,10 @@
 				<a class="button" href={`${site.releases}/latest`}>Download APK</a>
 				<a class="button secondary" href={site.github}>Source</a>
 			</p>
-			<p class="note">Android 14 or newer. Signed APKs from GitHub Releases.</p>
+			<p class="note">
+				Android 14 or newer. Signed APKs from GitHub Releases. Built by
+				<a href={site.developer.url}>{site.developer.name}</a>
+			</p>
 		</section>
 
 		<section class="screenshots" aria-label="Screenshots">
@@ -150,6 +154,7 @@
 
 	<footer>
 		<p>
+			Built by <a href={site.developer.url}>{site.developer.name}</a> ·
 			<a href={site.github}>Source</a> · GPL-3.0 · Runtime ported from
 			<a href="https://pi.dev">pi</a> (MIT)
 		</p>
